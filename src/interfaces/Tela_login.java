@@ -197,7 +197,7 @@ public class Tela_login extends javax.swing.JFrame {
             campo_senha.requestFocus();
         }else if(usuario.equals("admin") && senha.equals("admin")){
               JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
-              new Principal().setVisible(true);
+              new Principal_bibliotecaria().setVisible(true);
               this.dispose();
         }else{
                JOptionPane.showMessageDialog(this, "Dados inválidos","Alerta",1);
