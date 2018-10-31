@@ -30,6 +30,7 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
         menu_emprestimo = new javax.swing.JMenuItem();
         menu_devolucao = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -60,6 +61,7 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Bookmark_32px_1.png"))); // NOI18N
         jMenu1.setText("Livro");
+        jMenu1.setPreferredSize(new java.awt.Dimension(100, 32));
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu1ActionPerformed(evt);
@@ -89,6 +91,7 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
         jMenu2.setBackground(new java.awt.Color(0, 153, 255));
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Contacts_32px.png"))); // NOI18N
         jMenu2.setText("Aluno");
+        jMenu2.setMaximumSize(new java.awt.Dimension(100, 32767));
 
         menu_cadastro_aluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Add_32px.png"))); // NOI18N
         menu_cadastro_aluno.setText("Cadastro");
@@ -113,6 +116,7 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
         jMenu3.setBackground(new java.awt.Color(0, 102, 255));
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Schedule_32px.png"))); // NOI18N
         jMenu3.setText("Processo");
+        jMenu3.setPreferredSize(new java.awt.Dimension(100, 32));
 
         menu_emprestimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Event_32px.png"))); // NOI18N
         menu_emprestimo.setText("Emprestimo");
@@ -136,12 +140,23 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Services_26px.png"))); // NOI18N
         jMenu4.setText("Configurar");
+        jMenu4.setPreferredSize(new java.awt.Dimension(100, 26));
         jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu4MouseClicked(evt);
             }
         });
         jMenuBar1.add(jMenu4);
+
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Exit_32px_1.png"))); // NOI18N
+        jMenu5.setText("Deslogar");
+        jMenu5.setMaximumSize(new java.awt.Dimension(100, 32767));
+        jMenu5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu5MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
 
@@ -193,6 +208,10 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
        JOptionPane.showMessageDialog(this, "mensagem");
     }//GEN-LAST:event_jMenu4MouseClicked
 
+    private void jMenu5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu5MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jMenu5MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -231,6 +250,7 @@ public class Principal_bibliotecaria extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menu_aluno_pesquisa;
     private javax.swing.JMenuItem menu_cadastro_aluno;

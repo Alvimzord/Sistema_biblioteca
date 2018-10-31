@@ -195,11 +195,21 @@ public class Tela_login extends javax.swing.JFrame {
             campo_senha.setBackground(cor_erro);
             campo_senha.setForeground(Color.white);
             campo_senha.requestFocus();
-        }else if(usuario.equals("admin") && senha.equals("admin")){
+        }else if(usuario.equals("bib") && senha.equals("bib")){
               JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
               new Principal_bibliotecaria().setVisible(true);
               this.dispose();
+        }else if(usuario.equals("aluno") && senha.equals("aluno")){
+            JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
+            new Principal_aluno().setVisible(true);
+            this.dispose();
+        } else if(usuario.equals("admin") && senha.equals("admin")){
+            JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
+            new Principal_admin().setVisible(true);
+            this.dispose();
         }else{
+                
+                
                JOptionPane.showMessageDialog(this, "Dados inválidos","Alerta",1);
         }
     }//GEN-LAST:event_botao_logarActionPerformed
