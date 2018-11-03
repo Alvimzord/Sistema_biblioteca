@@ -31,6 +31,7 @@ public class View_bibliotecaria extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         menu_emprestimo = new javax.swing.JMenuItem();
         menu_devolucao = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -96,6 +97,11 @@ public class View_bibliotecaria extends javax.swing.JFrame {
 
         menu_cadastro_aluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Add_32px.png"))); // NOI18N
         menu_cadastro_aluno.setText("Cadastro");
+        menu_cadastro_aluno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menu_cadastro_alunoMouseClicked(evt);
+            }
+        });
         menu_cadastro_aluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menu_cadastro_alunoActionPerformed(evt);
@@ -139,6 +145,9 @@ public class View_bibliotecaria extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
+        jMenu4.setText("Nome generico");
+        jMenuBar1.add(jMenu4);
+
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Exit_32px_1.png"))); // NOI18N
         jMenu5.setText("Deslogar");
         jMenu5.setMaximumSize(new java.awt.Dimension(100, 32767));
@@ -156,9 +165,9 @@ public class View_bibliotecaria extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void menu_cadastro_alunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_cadastro_alunoActionPerformed
-        Cadastrar_Aluno tela_cad_aluno = new Cadastrar_Aluno();
-        principal.add(tela_cad_aluno);
-        tela_cad_aluno.setVisible(true);
+        Cadastro_Aluno cad_aluno = new Cadastro_Aluno();
+        principal.add(cad_aluno);
+        cad_aluno.setVisible(true);
     }//GEN-LAST:event_menu_cadastro_alunoActionPerformed
 
     private void menu_aluno_pesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_aluno_pesquisaActionPerformed
@@ -198,6 +207,10 @@ public class View_bibliotecaria extends javax.swing.JFrame {
     private void jMenu5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu5MouseClicked
         System.exit(0);
     }//GEN-LAST:event_jMenu5MouseClicked
+
+    private void menu_cadastro_alunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menu_cadastro_alunoMouseClicked
+        
+    }//GEN-LAST:event_menu_cadastro_alunoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -239,6 +252,7 @@ public class View_bibliotecaria extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menu_aluno_pesquisa;
