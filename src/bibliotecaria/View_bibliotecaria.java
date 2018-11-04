@@ -145,9 +145,6 @@ public class View_bibliotecaria extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-<<<<<<< HEAD
-        jMenu4.setText("Nome generico");
-=======
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Services_26px.png"))); // NOI18N
         jMenu4.setText("Configurar");
         jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -160,7 +157,6 @@ public class View_bibliotecaria extends javax.swing.JFrame {
                 jMenu4ActionPerformed(evt);
             }
         });
->>>>>>> mudanca-tetse
         jMenuBar1.add(jMenu4);
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Exit_32px_1.png"))); // NOI18N
@@ -208,11 +204,7 @@ public class View_bibliotecaria extends javax.swing.JFrame {
     }//GEN-LAST:event_menu_emprestimoActionPerformed
 
     private void menu_cadastro_livroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_cadastro_livroActionPerformed
-<<<<<<< HEAD
-        Cadastro_livro tela_cad_livro = new Cadastro_livro();
-=======
         cadastrar_livro tela_cad_livro = new cadastrar_livro();
->>>>>>> mudanca-tetse
         principal.add(tela_cad_livro);
         tela_cad_livro.setVisible(true);
     }//GEN-LAST:event_menu_cadastro_livroActionPerformed
@@ -231,8 +223,6 @@ public class View_bibliotecaria extends javax.swing.JFrame {
         
     }//GEN-LAST:event_menu_cadastro_alunoMouseClicked
 
-<<<<<<< HEAD
-=======
     private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
         
     }//GEN-LAST:event_jMenu4ActionPerformed
@@ -243,7 +233,6 @@ public class View_bibliotecaria extends javax.swing.JFrame {
         config.setVisible(true);
     }//GEN-LAST:event_jMenu4MouseClicked
 
->>>>>>> mudanca-tetse
     /**
      * @param args the command line arguments
      */

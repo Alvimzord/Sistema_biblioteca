@@ -35,10 +35,6 @@ public class View_admin extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-<<<<<<< HEAD
-        jMenu4 = new javax.swing.JMenu();
-=======
->>>>>>> mudanca-tetse
         jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -96,24 +92,6 @@ public class View_admin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
-<<<<<<< HEAD
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Services_26px.png"))); // NOI18N
-        jMenu4.setText("Configurar");
-        jMenu4.setPreferredSize(new java.awt.Dimension(100, 26));
-        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu4MouseClicked(evt);
-            }
-        });
-        jMenu4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu4ActionPerformed(evt);
-            }
-        });
-        jMenuBar1.add(jMenu4);
-
-=======
->>>>>>> mudanca-tetse
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Exit_32px_1.png"))); // NOI18N
         jMenu1.setText("Deslogar");
         jMenu1.setMaximumSize(new java.awt.Dimension(100, 32767));
@@ -141,15 +119,6 @@ public class View_admin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
-       Configurar tela_config = new Configurar();
-        principal.add(tela_config);
-        tela_config.setVisible(true);
-    }//GEN-LAST:event_jMenu4MouseClicked
-
-=======
->>>>>>> mudanca-tetse
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         pesquisar_bib pes_bib = new pesquisar_bib();
         principal.add(pes_bib);
@@ -161,13 +130,7 @@ public class View_admin extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1MouseClicked
 
     private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
-<<<<<<< HEAD
-        Configurar tela_config = new Configurar();
-        principal.add(tela_config);
-        tela_config.setVisible(true);
-=======
 
->>>>>>> mudanca-tetse
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
     private void jMenuItem2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem2MouseClicked
@@ -179,13 +142,6 @@ public class View_admin extends javax.swing.JFrame {
         principal.add(cad_bib);
         cad_bib.setVisible(true);    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-<<<<<<< HEAD
-    private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu4ActionPerformed
-
-=======
->>>>>>> mudanca-tetse
     /**
      * @param args the command line arguments
      */
@@ -221,10 +177,6 @@ public class View_admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
-<<<<<<< HEAD
-    private javax.swing.JMenu jMenu4;
-=======
->>>>>>> mudanca-tetse
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;

@@ -34,17 +34,6 @@ public class Devolucao extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-<<<<<<< HEAD
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        nome_livro = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        nome_aluno = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        Calendario = new com.toedter.calendar.JDateChooser();
-=======
         jPanel2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
@@ -55,7 +44,6 @@ public class Devolucao extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
->>>>>>> mudanca-tetse
 
         setClosable(true);
         setIconifiable(true);
@@ -63,52 +51,6 @@ public class Devolucao extends javax.swing.JInternalFrame {
         setResizable(true);
         setTitle("Devolução");
 
-<<<<<<< HEAD
-        jButton1.setText("Confirmar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("Cancelar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Data da entrega");
-
-        nome_livro.setToolTipText("Insira o nome do livro");
-        nome_livro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nome_livroActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setText("Livro*");
-
-        nome_aluno.setToolTipText("Insira um nome do aluno");
-        nome_aluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nome_alunoActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Aluno*");
-
-        Calendario.addContainerListener(new java.awt.event.ContainerAdapter() {
-            public void componentAdded(java.awt.event.ContainerEvent evt) {
-                CalendarioComponentAdded(evt);
-            }
-        });
-        Calendario.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                CalendarioMouseReleased(evt);
-            }
-        });
-=======
         jLabel11.setText("Dados do emprestimo:");
 
         jLabel4.setText("*Código do livro");
@@ -200,154 +142,27 @@ public class Devolucao extends javax.swing.JInternalFrame {
                     .addComponent(jButton3)
                     .addComponent(jButton1)))
         );
->>>>>>> mudanca-tetse
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nome_aluno)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 216, Short.MAX_VALUE)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
-                    .addComponent(nome_livro)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Calendario, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-=======
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
->>>>>>> mudanca-tetse
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nome_livro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nome_aluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jLabel1)
-                        .addGap(7, 7, 7)
-                        .addComponent(Calendario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addGap(0, 78, Short.MAX_VALUE)))
-                .addContainerGap())
-=======
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
->>>>>>> mudanca-tetse
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-  
- int a =0;
- int b =0;
- 
- 
- 
- String campo1 = nome_livro.getText();
- String campo2 = nome_aluno.getText();
- 
- if(campo1.equals("")){
-     JOptionPane.showMessageDialog(this, "Favor digitar o nome do livro");
-     nome_livro.setBackground(Color.red);
-     nome_livro.setForeground(Color.white);
-     nome_livro.requestFocus();
- }else{
-     a=1;
-      nome_livro.setBackground(Color.white);
-     nome_livro.setForeground(Color.black);
- }
- 
- if(Calendario.getCalendar().get(Calendar.DAY_OF_MONTH) != 24){
-        JOptionPane.showMessageDialog(this, "Favor selecionar uma data valida");
- }
- 
-  if(campo2.equals("")){
-     JOptionPane.showMessageDialog(this, "Favor digitar o nome do aluno");
-     nome_aluno.setBackground(Color.red);
-     nome_aluno.setForeground(Color.white);
-     nome_aluno.requestFocus();
- }else{
-     b=1;
-     nome_aluno.setBackground(Color.white);
-     nome_aluno.setForeground(Color.black);
- }
-  if(a==1 & b==1 & Calendario.getCalendar().get(Calendar.DAY_OF_MONTH) == 24){
-      JOptionPane.showMessageDialog(this, "Devolução aceita!");
-      this.setVisible(false);
-
-  }
-  
-
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void nome_livroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_livroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nome_livroActionPerformed
-
-    private void nome_alunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_alunoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nome_alunoActionPerformed
-
-    private void CalendarioComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_CalendarioComponentAdded
-    }//GEN-LAST:event_CalendarioComponentAdded
-
-    private void CalendarioMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CalendarioMouseReleased
-    }//GEN-LAST:event_CalendarioMouseReleased
-
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser Calendario;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField nome_aluno;
-    private javax.swing.JTextField nome_livro;
-=======
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -390,6 +205,5 @@ this.setVisible(false);
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
->>>>>>> mudanca-tetse
     // End of variables declaration//GEN-END:variables
 }

@@ -44,17 +44,6 @@ public class pesquisar_aluno extends javax.swing.JInternalFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-<<<<<<< HEAD
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-=======
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
@@ -72,7 +61,6 @@ public class pesquisar_aluno extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
->>>>>>> mudanca-tetse
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setText("*Parâmetro de pesquisa:");
