@@ -36,6 +36,10 @@ public class View_aluno extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+<<<<<<< HEAD
+=======
+        jMenuItem3 = new javax.swing.JMenuItem();
+>>>>>>> mudanca-tetse
         jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -66,6 +70,14 @@ public class View_aluno extends javax.swing.JFrame {
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Bookmark_32px_1.png"))); // NOI18N
         jMenu5.setText("Livros");
         jMenu5.setPreferredSize(new java.awt.Dimension(100, 26));
+<<<<<<< HEAD
+=======
+        jMenu5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu5ActionPerformed(evt);
+            }
+        });
+>>>>>>> mudanca-tetse
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Query_32px.png"))); // NOI18N
         jMenuItem1.setText("Situação");
@@ -95,6 +107,18 @@ public class View_aluno extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem2);
 
+<<<<<<< HEAD
+=======
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Event_32px.png"))); // NOI18N
+        jMenuItem3.setText("Reservar");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem3);
+
+>>>>>>> mudanca-tetse
         jMenuBar1.add(jMenu5);
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces_img/icons8_Exit_32px_1.png"))); // NOI18N
@@ -127,7 +151,13 @@ public class View_aluno extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
+=======
+        pesquisar_livro pes_liv = new pesquisar_livro();
+        principal.add(pes_liv);
+        pes_liv.setVisible(true);
+>>>>>>> mudanca-tetse
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
@@ -135,6 +165,7 @@ public class View_aluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1MouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
@@ -150,6 +181,31 @@ public class View_aluno extends javax.swing.JFrame {
         sit.setVisible(true);
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
+=======
+        situacao sit = new situacao();
+        principal.add(sit);
+        sit.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem2MouseClicked
+        
+    }//GEN-LAST:event_jMenuItem2MouseClicked
+
+    private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
+        
+    }//GEN-LAST:event_jMenuItem1MouseClicked
+
+    private void jMenu5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu5ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        reservar res = new reservar();
+        principal.add(res);
+        res.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+>>>>>>> mudanca-tetse
     /**
      * @param args the command line arguments
      */
@@ -190,6 +246,10 @@ public class View_aluno extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+<<<<<<< HEAD
+=======
+    private javax.swing.JMenuItem jMenuItem3;
+>>>>>>> mudanca-tetse
     private javax.swing.JDesktopPane principal;
     // End of variables declaration//GEN-END:variables
 }

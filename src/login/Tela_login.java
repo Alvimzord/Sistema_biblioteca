@@ -88,6 +88,14 @@ public class Tela_login extends javax.swing.JFrame {
                 botao_logarActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
+=======
+        botao_logar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                botao_logarKeyTyped(evt);
+            }
+        });
+>>>>>>> mudanca-tetse
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -140,7 +148,11 @@ public class Tela_login extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                .addContainerGap(125, Short.MAX_VALUE))
+>>>>>>> mudanca-tetse
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,19 +168,33 @@ public class Tela_login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(120, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(120, 120, 120))
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(119, 119, 119))
+>>>>>>> mudanca-tetse
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(7, 7, 7)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(35, Short.MAX_VALUE))
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
+>>>>>>> mudanca-tetse
         );
 
         pack();
@@ -199,6 +225,7 @@ public class Tela_login extends javax.swing.JFrame {
             campo_senha.setForeground(Color.white);
             campo_senha.requestFocus();
         }else if(usuario.equals("bib") && senha.equals("bib")){
+<<<<<<< HEAD
               JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
               new View_bibliotecaria().setVisible(true);
               this.dispose();
@@ -208,6 +235,14 @@ public class Tela_login extends javax.swing.JFrame {
             this.dispose();
         } else if(usuario.equals("admin") && senha.equals("admin")){
             JOptionPane.showMessageDialog(this, "Logado com sucesso","Alerta",JOptionPane.PLAIN_MESSAGE);
+=======
+              new View_bibliotecaria().setVisible(true);
+              this.dispose();
+        }else if(usuario.equals("aluno") && senha.equals("aluno")){
+            new View_aluno().setVisible(true);
+            this.dispose();
+        } else if(usuario.equals("admin") && senha.equals("admin")){
+>>>>>>> mudanca-tetse
             new View_admin().setVisible(true);
             this.dispose();
         }else{
@@ -227,6 +262,13 @@ public class Tela_login extends javax.swing.JFrame {
         campo_senha.setForeground(Color.black);
     }//GEN-LAST:event_campo_senhaMouseClicked
 
+<<<<<<< HEAD
+=======
+    private void botao_logarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_botao_logarKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botao_logarKeyTyped
+
+>>>>>>> mudanca-tetse
     /**
      * @param args the command line arguments
      */
