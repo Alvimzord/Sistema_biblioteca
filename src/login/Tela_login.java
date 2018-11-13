@@ -5,11 +5,14 @@
  */
 package login;
 
-import admin.View_admin;
-import Aluno.View_aluno;
-import bibliotecaria.View_bibliotecaria;
+import interfaces.View_admin;
+import interfaces.View_aluno;
+import interfaces.View_bibliotecaria;
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 
 /**
  *
@@ -56,7 +59,7 @@ public class Tela_login extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("tela de login");
+        setTitle("Login");
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -71,6 +74,11 @@ public class Tela_login extends javax.swing.JFrame {
         campo_senha.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 campo_senhaMouseClicked(evt);
+            }
+        });
+        campo_senha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                campo_senhaKeyPressed(evt);
             }
         });
 
@@ -233,6 +241,46 @@ public class Tela_login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_botao_logarKeyTyped
 
+    private void campo_senhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_senhaKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            String usuario = campo_usuario.getText();
+        String senha = campo_senha.getText();
+        
+        if(usuario.equals("") && senha.equals("")){
+             JOptionPane.showMessageDialog(this, "Favor digitar seu nome de usuario e sua senha","Alerta",2);
+             campo_usuario.setBackground(cor_erro);
+            campo_usuario.setForeground(Color.white);
+            campo_usuario.requestFocus();
+            
+            campo_senha.setBackground(cor_erro);
+            campo_senha.setForeground(Color.white);
+            campo_senha.requestFocus();
+        }else if(usuario.equals("")){
+            JOptionPane.showMessageDialog(this, "Favor digitar seu nome de usuario","Alerta",2);
+            campo_usuario.setBackground(cor_erro);
+            campo_usuario.setForeground(Color.white);
+            campo_usuario.requestFocus();
+        }else if(senha.equals("")){
+             JOptionPane.showMessageDialog(this, "Favor digitar sua senha","Alerta",2);
+            campo_senha.setBackground(cor_erro);
+            campo_senha.setForeground(Color.white);
+            campo_senha.requestFocus();
+        }else if(usuario.equals("bib") && senha.equals("bib")){
+              new View_bibliotecaria().setVisible(true);
+              this.dispose();
+        }else if(usuario.equals("aluno") && senha.equals("aluno")){
+            new View_aluno().setVisible(true);
+            this.dispose();
+        } else if(usuario.equals("admin") && senha.equals("admin")){
+            new View_admin().setVisible(true);
+            this.dispose();
+        }else{
+               JOptionPane.showMessageDialog(this, "Dados inválidos","Alerta",1);
+        }
+        }
+    }//GEN-LAST:event_campo_senhaKeyPressed
+
     /**
      * @param args the command line arguments
      */
@@ -265,9 +313,20 @@ public class Tela_login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                try {
+                        for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                             if ("Windows".equals(info.getName())) {
+                                UIManager.setLookAndFeel(info.getClassName());
+                                break;
+                            }
+                        }              
+                    } catch (Exception e) {
+  // Caso desse erro ao mudar o look and fell
+                }
                 new Tela_login().setVisible(true);
             }
-        });
+        }
+        );
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
